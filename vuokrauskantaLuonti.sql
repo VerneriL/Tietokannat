@@ -7,11 +7,11 @@ CREATE TABLE tuoteryhma (
 
 CREATE TABLE tuote (
                 yksilointikoodi INTEGER NOT NULL,
+                tuoteryhma VARCHAR(20) NOT NULL,
                 nimike VARCHAR(40) NOT NULL,
                 merkki VARCHAR(20) NOT NULL,
                 Malli VARCHAR(20) NOT NULL,
                 paivavuokra FLOAT NOT NULL,
-                tuoteryhma VARCHAR(20) NOT NULL,
                 CONSTRAINT tuote_pk PRIMARY KEY (yksilointikoodi)
 );
 
